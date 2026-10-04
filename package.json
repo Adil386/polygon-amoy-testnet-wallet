@@ -1,0 +1,63 @@
+{
+  "name": "polygon-amoy-testnet-wallet",
+  "version": "1.0.0",
+  "description": "A lightweight React Native Ethereum wallet for Polygon Amoy testnet with biometric authentication",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "eject": "expo eject"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-native": "0.73.0",
+    "expo": "^50.0.0",
+    "expo-secure-store": "^13.0.0",
+    "expo-local-authentication": "^14.0.0",
+    "expo-haptics": "^13.0.0",
+    "react-native-qrcode-svg": "^6.2.0",
+    "ethers": "^6.10.0",
+    "react-native-get-random-values": "^1.10.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@types/react": "~18.2.0",
+    "@types/react-native": "~0.73.0"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "expo": {
+    "name": "Polygon Amoy Wallet",
+    "slug": "polygon-amoy-wallet",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0F172A"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTabletMode": true,
+      "requiresFullScreen": false
+    },
+    "android": {
+      "useNextNotificationApi": true,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0F172A"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
